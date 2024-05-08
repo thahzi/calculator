@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   <div class="container">
+    <div class="row main justify-contant-center align-items-center">
+
+        <div class="col-md-4"></div>
+        <!-- textarea -->
+        <div class="col-md-4 box p-3 shadow">
+            <div class="textArea d-flex gap-2 mt-3 justify-contant-center">
+                <input type="text" readonly class="text shadow w-100 fs-4 rounded-2 ps-2 p-2" id="result">
+            </div>
+
+        <!-- 1st Row -->
+            <div class="btns pe-4 ps-4 text-center mt-3 d-flex justify-content-between">
+                <button onclick="clearAll()">c</button>
+                <button onclick="display('()')">( )</button>
+                <button onclick="display('%')">%</button>
+                <button onclick="display('/')">/</button>
+            </div>
+
+        <!-- 2nd Row -->
+            <div class="btns pe-4 ps-4 text-center mt-3 d-flex justify-content-between">
+                <button onclick="display(7)">7</button>
+                <button onclick="display(8)">8</button>
+                <button onclick="display(9)">9</button>
+                <button onclick="display('*')">*</button>
+            </div>
+
+        <!-- 3rd Row -->
+            <div class="btns pe-4 ps-4 text-center mt-3 d-flex justify-content-between">
+                <button onclick="display(4)">4</button>
+                <button onclick="display(5)">5</button>
+                <button onclick="display(6)">6</button>
+                <button onclick="display('-')">-</button>
+            </div>
+
+        <!-- 4th Row -->
+            <div class="btns pe-4 ps-4 text-center mt-3 d-flex justify-content-between">
+                <button onclick="display(1)">1</button>
+                <button onclick="display(2)">2</button>
+                <button onclick="display(3)">3</button>
+                <button onclick="display('+')">+</button>
+            </div>
+
+        <!-- 5th Row -->
+            <div class="btns pe-4 ps-4 text-center mt-3 d-flex justify-content-between mb-3">
+                <button onclick="back()">DEL</button>
+                <button onclick="display(0)">0</button>
+                <button onclick="display('.')">.</button>
+                <button onclick="equal()">=</button>
+            </div>
+
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+   </div>
+
+
+   <script src="./script.js"></script>
+
+</body>
+</html>
