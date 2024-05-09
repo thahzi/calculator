@@ -19,6 +19,8 @@ body{
 input{
     height: 80px;
     text-align: right;
+    
+    
 }
 
 button{
@@ -36,5 +38,12 @@ button{
 }
 button:hover{
     background-color: rgb(63, 60, 60);
+}
+@media (max-width:750px){
+    button{
+        height: 60px;
+        width: 60px;
+        font-size: 25px;
+    }
 }
 

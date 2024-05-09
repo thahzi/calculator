@@ -12,18 +12,19 @@
 
 </head>
 <body>
-   <div class="container">
-    <div class="row main justify-contant-center align-items-center">
+   <div class="container ">
+    <div class="row main d-flex justify-contant-center align-items-center">
 
         <div class="col-md-4"></div>
         <!-- textarea -->
-        <div class="col-md-4 box p-3 shadow">
+        <div class="col-md-4 box p-3 ms-2 mt-2 shadow justify-contant-center align-items-center">
+            <h3 class="text-light ps-2">MT <span class="fs-5">calculator</span></h3>
             <div class="textArea d-flex gap-2 mt-3 justify-contant-center">
-                <input type="text" readonly class="text shadow w-100 fs-4 rounded-2 ps-2 p-2" id="result">
+                <input type="text" readonly class="text shadow w-100 fs-1 rounded-2 ps-2 p-2" id="result">
             </div>
 
         <!-- 1st Row -->
-            <div class="btns pe-4 ps-4 text-center mt-3 d-flex justify-content-between">
+            <div class="btns text-center mt-4 d-flex justify-content-between">
                 <button onclick="clearAll()">c</button>
                 <button onclick="display('()')">( )</button>
                 <button onclick="display('%')">%</button>
@@ -31,7 +32,7 @@
             </div>
 
         <!-- 2nd Row -->
-            <div class="btns pe-4 ps-4 text-center mt-3 d-flex justify-content-between">
+            <div class="btns text-center mt-3 d-flex justify-content-between">
                 <button onclick="display(7)">7</button>
                 <button onclick="display(8)">8</button>
                 <button onclick="display(9)">9</button>
@@ -39,7 +40,7 @@
             </div>
 
         <!-- 3rd Row -->
-            <div class="btns pe-4 ps-4 text-center mt-3 d-flex justify-content-between">
+            <div class="btns text-center mt-3 d-flex justify-content-between">
                 <button onclick="display(4)">4</button>
                 <button onclick="display(5)">5</button>
                 <button onclick="display(6)">6</button>
@@ -47,7 +48,7 @@
             </div>
 
         <!-- 4th Row -->
-            <div class="btns pe-4 ps-4 text-center mt-3 d-flex justify-content-between">
+            <div class="btns text-center mt-3 d-flex justify-content-between">
                 <button onclick="display(1)">1</button>
                 <button onclick="display(2)">2</button>
                 <button onclick="display(3)">3</button>
@@ -55,16 +56,21 @@
             </div>
 
         <!-- 5th Row -->
-            <div class="btns pe-4 ps-4 text-center mt-3 d-flex justify-content-between mb-3">
+            <div class="btns text-center mt-3 d-flex justify-content-between mb-4">
                 <button onclick="back()">DEL</button>
                 <button onclick="display(0)">0</button>
                 <button onclick="display('.')">.</button>
                 <button onclick="equal()">=</button>
             </div>
+        
+       
 
         </div>
+        <p class="text-light text-center">© 2024 Mohamed Thahzeeb C N (mt) . All Rights Reserved.</p>
         <div class="col-md-4"></div>
     </div>
+    
+    
    </div>
 
 
